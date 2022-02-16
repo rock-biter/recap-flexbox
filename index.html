@@ -105,7 +105,7 @@
         </section>
 
         <span class="caption">justify content end</span> 
-        <section class="section flex">
+        <section class="section flex justify-end">
 
             <div class="col">1</div>
             <div class="col">2</div>
@@ -115,7 +115,7 @@
         </section>
 
         <span class="caption">justify content center</span> 
-        <section class="section flex">
+        <section class="section flex justify-center">
 
             <div class="col">1</div>
             <div class="col">2</div>
@@ -125,7 +125,7 @@
         </section>
 
         <span class="caption">justify content between</span> 
-        <section class="section flex">
+        <section class="section flex justify-between">
 
             <div class="col">1</div>
             <div class="col">2</div>
@@ -135,7 +135,7 @@
         </section>
 
         <span class="caption">justify content around</span> 
-        <section class="section flex">
+        <section class="section flex justify-around">
 
             <div class="col">1</div>
             <div class="col">2</div>
@@ -145,7 +145,7 @@
         </section>
 
         <span class="caption">justify content evenly</span> 
-        <section class="section flex">
+        <section class="section flex justify-evenly">
 
             <div class="col">1</div>
             <div class="col">2</div>
@@ -158,7 +158,7 @@
         <h3 class="title">align items</h3>
 
         <span class="caption">align items start</span> 
-        <section class="section h-2xl flex">
+        <section class="section h-2xl flex items-start">
 
             <div class="col">1</div>
             <div class="col">2</div>
@@ -168,7 +168,7 @@
         </section>
 
         <span class="caption">align items end</span> 
-        <section class="section h-2xl flex">
+        <section class="section h-2xl flex items-end">
 
             <div class="col">1</div>
             <div class="col">2</div>
@@ -178,7 +178,7 @@
         </section>
 
         <span class="caption">align items center</span> 
-        <section class="section h-2xl flex">
+        <section class="section h-2xl flex items-center">
 
             <div class="col">1</div>
             <div class="col">2</div>
@@ -188,7 +188,7 @@
         </section>
 
         <span class="caption">align items stretch</span> 
-        <section class="section h-2xl flex">
+        <section class="section h-2xl flex items-stretch">
 
             <div class="col">1</div>
             <div class="col">2</div>
@@ -198,7 +198,7 @@
         </section>
 
         <span class="caption">align items baseline</span> 
-        <section class="section h-2xl flex">
+        <section class="section h-2xl flex items-baseline">
 
             <div class="col h-lg">1</div>
             <div class="col pt-0">2</div>
@@ -211,7 +211,7 @@
         <h3 class="title">align content</h3>
 
         <span class="caption">align content start</span> 
-        <section class="section flex-wrap h-3xl flex">
+        <section class="section flex-wrap h-3xl flex content-start">
 
             <div class="col">0</div>
             <div class="col">1</div>
@@ -228,12 +228,12 @@
 
         <!-- strange things : flex-wrap align-items align-content -->
         <span class="caption">align content start - items center</span> 
-        <section class="section flex-wrap h-3xl flex">
-
+        <section class="section flex-wrap h-3xl flex content-start items-center">
+            <!-- add class h-lg, h-xl, h-2xl, ... to items to show items-align effect  -->
             <div class="col">0</div>
             <div class="col">1</div>
             <div class="col">2</div>
-            <div class="col">3</div>
+            <div class="col">3</div> 
             <div class="col">4</div>
             <div class="col">5</div>
             <div class="col">6</div>
@@ -251,8 +251,8 @@
         <span class="caption">items order</span> 
         <section class="section flex">
 
-            <div class="col">0</div>
-            <div class="col">0</div>
+            <div class="col order-1">1</div>
+            <div class="col order-1">1</div>
             <div class="col">0</div>
             <div class="col">0</div>
             <div class="col">0</div>
@@ -280,8 +280,8 @@
 
             <div class="col w-2xl">1</div>
             <div class="col w-2xl">1</div>
-            <div class="col w-2xl">1</div>
-            <div class="col w-2xl">1</div>
+            <div class="col w-2xl shrink-2">2</div>
+            <div class="col w-2xl shrink-3">3</div>
             <div class="col w-2xl">1</div>
 
         </section>
@@ -292,21 +292,24 @@
         <span class="caption">items basis</span> 
         <section class="section flex">
 
-            <div class="col">0</div>
-            <div class="col">1</div>
-            <div class="col">2</div>
-            <div class="col">0</div>
-            <div class="col">0</div>
+            <div class="col">-</div>
+            <div class="col basis-1/3">33%</div>
+            <div class="col basis-1/2">50%</div>
+            <div class="col">-</div>
+            <div class="col">-</div>
 
         </section>
 
         <section class="section flex flex-col h-4xl">
-
-            <div class="col">0</div>
-            <div class="col">1</div>
-            <div class="col">2</div>
-            <div class="col">0</div>
-            <div class="col">0</div>
+            <!-- 
+                works only with fixed height of flex-container: 
+                remove h-4xl class and add fixed height property 
+            -->
+            <div class="col">-</div>
+            <div class="col basis-1/3">33%</div>
+            <div class="col basis-1/2">50%</div>
+            <div class="col">-</div>
+            <div class="col">-</div>
 
         </section>
 
@@ -317,8 +320,8 @@
         <section class="section flex">
 
             <div class="col">0</div>
-            <div class="col">1</div>
-            <div class="col">2</div>
+            <div class="col basis-1/3 grow-1">33% + 1 grow</div>
+            <div class="col grow-1">1 grow</div>
             <div class="col">0</div>
             <div class="col">0</div>
 
@@ -331,15 +334,15 @@
         <section class="section flex-wrap h-3xl items-center flex content-end">
 
             <div class="col">0</div>
-            <div class="col">1</div>
+            <div class="col self-end">end</div>
             <div class="col pt-0">2</div>
             <div class="col">3</div>
             <div class="col h-lg">4</div>
             <div class="col">5</div>
             <div class="col h-xl">6</div>
-            <div class="col">7</div>
-            <div class="col">8</div>
-            <div class="col pb-0">9</div>
+            <div class="col self-start">start</div>
+            <div class="col h-lg">8</div>
+            <div class="col pb-0 self-stretch">stretch</div>
 
         </section>
 
