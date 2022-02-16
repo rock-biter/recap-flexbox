@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <main>
+
+        <!-- CONTAINER RULES -->
+        <h3 class="title">flex</h3>
+
+        <!-- display flex -->
+        <span class="caption">display flex</span> 
+        <section class="section flex">
+
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+        </section>
+
+        <h3 class="title">flex direction</h3>
+        <!-- dierction: row | row-reverse | col | col-reverse -->
+        <span class="caption">direction row reverse</span> 
+        <section class="section flex flex-row-reverse">
+
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+        </section>
+
+        <span class="caption">direction col</span> 
+        <section class="section flex-col flex">
+
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+        </section>
+
+        <span class="caption">direction col reverse</span> 
+        <section class="section flex-col-reverse flex">
+
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+        </section>
+
+        <h3 class="title">flex wrap</h3>
+        <!-- nowrap | wrap | wrap-reverse -->
+        <span class="caption">display flex e flex-wrap</span>
+        <section class="section flex flex-wrap">
+
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+            <div class="col">6</div>
+            <div class="col">7</div>
+            <div class="col">8</div>
+
+        </section>
+
+        <span class="caption">flex wrap-reverse</span>
+        <section class="section flex flex-wrap-reverse">
+
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+            <div class="col">6</div>
+            <div class="col">7</div>
+            <div class="col">8</div>
+            <div class="col">9</div>
+            <div class="col">10</div>
+            <div class="col">11</div>
+            <div class="col">12</div>
+            <div class="col">13</div>
+
+        </section>
+
+        <h3 class="title">justify content</h3>
+        <!-- justify start | end | center | between | around | evenly -->
+        <span class="caption">justify content start (default)</span> 
+        <section class="section flex">
+
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+        </section>
+
+        <span class="caption">justify content end</span> 
+        <section class="section flex">
+
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+        </section>
+
+        <span class="caption">justify content center</span> 
+        <section class="section flex">
+
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+        </section>
+
+        <span class="caption">justify content between</span> 
+        <section class="section flex">
+
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+        </section>
+
+        <span class="caption">justify content around</span> 
+        <section class="section flex">
+
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+        </section>
+
+        <span class="caption">justify content evenly</span> 
+        <section class="section flex">
+
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+        </section>
+
+        <!-- align items start | end | center | stretch | baseline | evenly -->
+        <h3 class="title">align items</h3>
+
+        <span class="caption">align items start</span> 
+        <section class="section h-2xl flex">
+
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+        </section>
+
+        <span class="caption">align items end</span> 
+        <section class="section h-2xl flex">
+
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+        </section>
+
+        <span class="caption">align items center</span> 
+        <section class="section h-2xl flex">
+
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+        </section>
+
+        <span class="caption">align items stretch</span> 
+        <section class="section h-2xl flex">
+
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+        </section>
+
+        <span class="caption">align items baseline</span> 
+        <section class="section h-2xl flex">
+
+            <div class="col h-lg">1</div>
+            <div class="col pt-0">2</div>
+            <div class="col">3</div>
+            <div class="col pb-0">4</div>
+            <div class="col h-xl">5</div>
+        </section>
+
+        <!-- align content start | end | center | stretch | between | around | evenly -->
+        <h3 class="title">align content</h3>
+
+        <span class="caption">align content start</span> 
+        <section class="section flex-wrap h-3xl flex">
+
+            <div class="col">0</div>
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+            <div class="col">6</div>
+            <div class="col">7</div>
+            <div class="col">8</div>
+            <div class="col">9</div>
+
+        </section>
+
+        <!-- strange things : flex-wrap align-items align-content -->
+        <span class="caption">align content start - items center</span> 
+        <section class="section flex-wrap h-3xl flex">
+
+            <div class="col">0</div>
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+            <div class="col">6</div>
+            <div class="col">7</div>
+            <div class="col">8</div>
+            <div class="col">9</div>
+
+        </section>
+
+        <!-- ITEMS RULES -->
+
+        <!-- order -->
+        <h3 class="title">items order</h3>
+
+        <span class="caption">items order</span> 
+        <section class="section flex">
+
+            <div class="col">0</div>
+            <div class="col">0</div>
+            <div class="col">0</div>
+            <div class="col">0</div>
+            <div class="col">0</div>
+
+        </section>
+
+        <!-- flex-grow -->
+        <h3 class="title">items grow</h3>
+
+        <span class="caption">items grow</span> 
+        <section class="section flex">
+
+            
+            <div class="col grow-0">1</div>
+            <div class="col grow-3">3</div>
+            <div class="col grow-0">1</div>
+
+        </section>
+
+        <!-- flex-shrink -->
+        <h3 class="title">items shrink</h3>
+
+        <span class="caption">items shrink</span> 
+        <section class="section flex">
+
+            <div class="col w-2xl">1</div>
+            <div class="col w-2xl">1</div>
+            <div class="col w-2xl">1</div>
+            <div class="col w-2xl">1</div>
+            <div class="col w-2xl">1</div>
+
+        </section>
+
+        <!-- flex-basis -->
+        <h3 class="title">items basis</h3>
+
+        <span class="caption">items basis</span> 
+        <section class="section flex">
+
+            <div class="col">0</div>
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">0</div>
+            <div class="col">0</div>
+
+        </section>
+
+        <section class="section flex flex-col h-4xl">
+
+            <div class="col">0</div>
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">0</div>
+            <div class="col">0</div>
+
+        </section>
+
+        <!-- flex-basis + flex-grow -->
+        <h3 class="title">items basis + grow</h3>
+
+        <span class="caption">items basis + grow</span> 
+        <section class="section flex">
+
+            <div class="col">0</div>
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">0</div>
+            <div class="col">0</div>
+
+        </section>
+
+        <!-- align-self -->
+        <h3 class="title">items align self</h3>
+
+        <span class="caption">align self</span> 
+        <section class="section flex-wrap h-3xl items-center flex content-end">
+
+            <div class="col">0</div>
+            <div class="col">1</div>
+            <div class="col pt-0">2</div>
+            <div class="col">3</div>
+            <div class="col h-lg">4</div>
+            <div class="col">5</div>
+            <div class="col h-xl">6</div>
+            <div class="col">7</div>
+            <div class="col">8</div>
+            <div class="col pb-0">9</div>
+
+        </section>
+
+
+    </main>
+
+</body>
+</html>
